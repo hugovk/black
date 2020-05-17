@@ -22,4 +22,5 @@ jobs:
       - name: Check for updates
         run: |
           pre-commit autoupdate
+          git status --porcelain
           test $(git status --porcelain| wc -l) = 0
