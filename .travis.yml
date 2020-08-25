@@ -27,6 +27,9 @@ matrix:
       python: 3.7
     - name: "3.8"
       python: 3.8
+    - name: "3.8 s390x"
+      python: 3.8
+      arch: s390x
     - name: "3.9"
       python: 3.9-dev
   allow_failures:
