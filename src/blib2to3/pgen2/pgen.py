@@ -16,8 +16,14 @@ from typing import (
     Tuple,
     Union,
     Sequence,
-    NoReturn,
 )
+try:
+    # Python 3.6.2+
+    from typing import NoReturn
+except ImportError:
+    # Python 3.6.0 - 3.6.1
+    from typing_extensions import NoReturn
+
 from blib2to3.pgen2 import grammar
 from blib2to3.pgen2.tokenize import GoodTokenInfo
 import os
