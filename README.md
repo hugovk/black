@@ -86,7 +86,7 @@ Options:
   -l, --line-length INTEGER       How many characters per line to allow.
                                   [default: 88]
 
-  -t, --target-version [py27|py33|py34|py35|py36|py37|py38]
+  -t, --target-version [py27|py33|py34|py35|py36|py37|py38|py39]
                                   Python versions that should be supported by
                                   Black's output. [default: per-file auto-
                                   detection]
@@ -127,13 +127,14 @@ Options:
                                   paths are excluded. Use forward slashes for
                                   directories on all platforms (Windows, too).
                                   Exclusions are calculated first, inclusions
-                                  later.  [default: /(\.eggs|\.git|\.hg|\.mypy
-                                  _cache|\.nox|\.tox|\.venv|\.svn|_build|buck-
-                                  out|build|dist)/]
+                                  later.  [default: /(\.direnv|\.eggs|\.git|\.
+                                  hg|\.mypy_cache|\.nox|\.tox|\.venv|\.svn|_bu
+                                  ild|buck-out|build|dist)/]
 
   --force-exclude TEXT            Like --exclude, but files and directories
                                   matching this regex will be excluded even
-                                  when they are passed explicitly as arguments.
+                                  when they are passed explicitly as
+                                  arguments.
 
   -q, --quiet                     Don't emit non-error messages to stderr.
                                   Errors are still emitted; silence those with
