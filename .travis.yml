@@ -3,6 +3,12 @@ cache:
   pip: true
   directories:
     - $HOME/.cache/pre-commit
+
+arch:
+  - amd64
+  - arm64
+  - s390x
+
 env:
   - TEST_CMD="coverage run -m unittest"
 install:
