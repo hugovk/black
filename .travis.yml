@@ -23,8 +23,14 @@ matrix:
         - TEST_CMD="pre-commit run --all-files --show-diff-on-failure"
     - name: "3.6"
       python: 3.6
+    - name: "3.6 s390x"
+      python: 3.6
+      arch: s390x
     - name: "3.7"
       python: 3.7
+    - name: "3.7 s390x"
+      python: 3.7
+      arch: s390x
     - name: "3.8"
       python: 3.8
     - name: "3.8 s390x"
@@ -32,6 +38,9 @@ matrix:
       arch: s390x
     - name: "3.9"
       python: 3.9-dev
+    - name: "3.9 s390x"
+      python: 3.9-dev
+      arch: s390x 
   allow_failures:
     - python: 3.9-dev
 before_deploy:
